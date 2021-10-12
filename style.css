@@ -1,0 +1,11 @@
+.fixed-bar{
+    position: fixed;
+    top:-15%;
+    opacity: 0;
+}
+.hide-option{
+    display: none;
+}
+.box-shadow {
+    box-shadow: -2px 0 9px -6px black;
+}

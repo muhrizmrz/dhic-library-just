@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <header class="col-12 p-2 pt-3 bg-white box-shadow" style="position: fixed;top: 0px;z-index: 1;">
+        <div class="row">
+            <div class="col-12 col-md-5 col-sm-5 mt-2 pl-5">
+                <h2 class="">DAILY QUIZ</h2>
+
+            </div>
+            <nav class="col-12 col-md-7 col-sm-7 text-right pr-5">
+                <ul class="mt-2">
+                    <a href="" id="Home" style="color: black;margin-left: 14px;">
+                        <li class="list-inline-item">Home</li>
+                    </a>
+                    <a href="#service" style="color: black;margin-left: 14px;">
+                        <li class="list-inline-item">High score</li>
+                    </a>
+                    <a href="#" style="color: black;margin-left: 14px;">
+                        <li class="list-inline-item">Study</li>
+                    </a>
+
+                    <a href="#" style="color: black;margin-left: 14px;">
+                        <li class="list-inline-item">About</li>
+                    </a>
+
+                </ul>
+                <hr>
+            </nav>
+
+        </div>
+    </header>
+    
+    
+
+
+
+    <div class="container" id="start-quiz" style="margin-top: 12%;">
+        <div class="row justify-content-center mt-5 bg-info p-5">
+            <div class="col-md-7 text-center mt-5">
+                <h3>DAILY QUIZ</h3>
+                <p>Participate In Daily Quiz & Win Prizes</p>
+                <form id="participent-form" action="quiz-time.html">
+                    <input type="text" id="participent" class="form-control mb-5">
+                    <button class="btn btn-success" type="submit">Start</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container hide-option" id="quiz-time" style="margin-top: 12%;">
+        <div class="row justify-content-center p-2">
+            <div class="col-md-4" id="welcome-participent">
+                <h4 class="text-center">Welcome, <span class="participent-name">Muhriz</span></h4>
+            </div>
+            
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-8 col-lg-8 bg-light p-5" id="question-section">
+                <h3 class="text-center">Question <span id="question-num">1</span></h3><hr><br>
+                <h5 class="text-center" id="question"><b>What is the name of your?</b></h5>
+                <div class="row justify-content-center" id="options">
+                    
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12 hide-option" id="next-div">
+                        <button class="btn btn-primary float-right" id="next">Next</button>
+                    </div>
+                    <div class="col-md-12 hide-option text-center" id="checkScore-div">
+                        <button class="btn btn-primary" id="checkScore">Check Score</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5 text-center hide-option" id="score-section">
+                <h2 style="font-family: Arial, Helvetica, sans-serif;">Congratulation, <span class="participent-name"></span></h2>
+                <h3>You have scored</h3>
+                <h5><span id="score"></span>/<span id="total-score"></span></h5>
+            </div>
+           
+            
+        </div><br><br><br<br><br<br>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="quiz.js"></script>
+</body>
+
+</html>

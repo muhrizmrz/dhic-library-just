@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <header class="col-12 p-4 box-shadow" >
+        <div class="row">
+            <div class="col-12 col-md-5 col-sm-5">
+                <h2 class="">DHIC LIBRARY</h2>
+
+            </div>
+            <nav class="col-12 col-md-7 col-sm-7 text-right pr-5">
+                <ul class="mt-2">
+                    <a href="" id="Home" style="color: black;margin-left: 14px;">
+                        <li class="list-inline-item">Home</li>
+                    </a>
+                    <a href="#service" style="color: black;margin-left: 14px;">
+                        <li class="list-inline-item">Catalogue</li>
+                    </a>
+                    <a href="#" style="color: black;margin-left: 14px;">
+                        <li class="list-inline-item">Circulations</li>
+                    </a>
+                    <a href="#" style="color: black;margin-left: 14px;">
+                        <li class="list-inline-item">Settings</li>
+                    </a>
+                    <a href="#" style="color: black;margin-left: 14px;">
+                        <li class="list-inline-item">About</li>
+                    </a>
+
+                </ul>
+                <hr>
+            </nav>
+
+        </div>
+    </header>
+    
+    <div style="width: 100%;" class="p-3">
+        
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+                    <form>
+                        <input type="search" placeholder="Search Books" class="form-control">
+                    </form>
+                </div>
+            </div>
+    </div>
+    <div id="searchBooks" class="fixed-bar p-3" style="width: 100%;z-index: 1;background: #2796f5;">
+        
+        <div class="row justify-content-center">
+            <div class="col-md-5 col-sm-5" id="searchbar-title">
+                <h2 class="text-white">DHIC LIBRARY</h2>
+            </div>
+            <div class="col-md-7" id="searchInput">
+                <form>
+                    <input type="search" placeholder="Search Books" class="form-control">
+                </form>
+            </div>
+        </div>  
+    </div>
+
+
+
+    <section style="z-index: -1;" class="bg-light">
+        <div class="container">
+            <div class="row justify-content-center p-5" id="service">
+                
+                <div class="col-md-10">
+                    <div class="row justify-content-center">
+                        <div class="col-md-3 p-5 bg-white m-3">
+                            <h5>Catalogue</h5>
+                        </div>
+                        <div class="col-md-3 p-5 bg-white m-3">
+                            <h5>Patrons</h5>
+                        </div>
+                        <div class="col-md-3 p-5 bg-white m-3">
+                            <h5>Settings</h5>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-7"> 
+                <h3 class="text-center m-2 p-5">Today's Library Duty</h3>
+                <table class="table">
+                    <thead>
+                        <th>Day</th>
+                        <th>Staff I</th>
+                        <th>Staff II</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="day"></td>
+                            <td class="staffI"></td>
+                            <td class="staffII"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="row justify-content-center mt-5 bg-info p-5">
+            <div class="col-md-7 text-center">
+                <h3>DAILY QUIZ</h3>
+                <p>Participate In Daily Quiz & Win Prizes</p>
+                <br>
+                <a href="quiz.html"><button class="btn btn-success">Start</button></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
